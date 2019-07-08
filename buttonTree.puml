@@ -1,0 +1,17 @@
+
+@startuml
+Plus "4" --> Operator
+class Command {
+calculator
+name
+command
+str()
+}
+Zero "10" --> Number
+Ans "2" --> Function
+Function --> Command
+Operator --> Number
+Number --> Command
+Number : execute()
+Function : Execute()
+@enduml

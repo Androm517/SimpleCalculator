@@ -1,0 +1,14 @@
+@startuml
+class Application {
+calculator
+user_interface
+display
+ButtonCommands
+button_handlers()
+}
+Application *-- Calculator
+ButtonCommands *-- Calculator
+ButtonGUI o-- ButtonCommands
+Calculator : expression
+Calculator o-- Display
+@enduml
